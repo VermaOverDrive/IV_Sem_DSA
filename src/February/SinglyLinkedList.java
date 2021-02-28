@@ -25,6 +25,18 @@ public class SinglyLinkedList {
         return head == null;
     }
 
+    public void insertAtBegin(Node newNode) {
+        if (head==null) {
+            head =newNode;
+            return;
+
+        }
+        Node temp=head;
+        head=newNode;
+        newNode.next=temp;
+
+
+    }
     public void print() {
         if (!isEmpty()) {
             Node temp = head;
@@ -38,3 +50,4 @@ public class SinglyLinkedList {
         System.out.println("List is empty");
     }
 }
+
