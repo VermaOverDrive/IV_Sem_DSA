@@ -7,32 +7,32 @@ public class SinglyLinkedList {
         this.head = null;
     }
 
-    public void insertAtEnd(Node newNode){
-        if(head==null){
-            head=newNode;
+    public void insertAtEnd(Node newNode) {
+        if (head == null) {
+            head = newNode;
             return;
         }
-        Node temp= head;
-        while(temp!=null){
-            temp=temp.next;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
         }
-        temp=newNode;
+        temp = newNode;
     }
 
-    public boolean isEmpty(){
-        return head==null;
+    public boolean isEmpty() {
+        return head == null;
     }
-    public void print(){
-        if(!isEmpty()){
-            Node temp=head;
-            while(temp!=null){
-                System.out.print(temp.data+" -> ");
-                temp=temp.next;
+
+    public void print() {
+        if (!isEmpty()) {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " -> ");
+                temp = temp.next;
             }
             System.out.println();
             return;
         }
         System.out.println("List is empty");
     }
-
 }
