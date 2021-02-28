@@ -14,11 +14,10 @@ public class SinglyLinkedList {
         }
         Node temp = head;
         while (temp.next!= null) {
-            System.out.println(temp.next);
             temp = temp.next;
         }
         temp.next= newNode;
-        System.out.println();
+
     }
 
     public boolean isEmpty() {
