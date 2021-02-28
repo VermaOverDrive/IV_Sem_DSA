@@ -11,5 +11,11 @@ public class Main {
         LL.print();
         LL.insertAtBegin(new Node(8 ));
         LL.print();
+        LL.insertAtMiddle(new Node(3));
+        LL.print();
+        LL.insertAtMiddle(new Node(888));
+
+        LL.print();
+
     }
 }

@@ -37,8 +37,21 @@ public class SinglyLinkedList {
 
     }
     public void insertAtMiddle(Node newNode ) {
+            if(head==null){
+                head =newNode ;
+                return;
 
+            }
+            Node slow =head;
+            Node fast=head.next;
+            while(fast != null && fast.next!= null){
+                slow=slow.next;
+                fast=fast.next.next;
 
+            }
+              Node  temp=slow.next;
+              slow.next=newNode;
+              newNode.next=temp;
 
     }
 
