@@ -3,7 +3,7 @@ package February;
 public class SinglyLinkedList {
     public Node head;
 
-    public SinglyLinkedList(Node head) {
+    public SinglyLinkedList() {
         this.head = null;
     }
 
