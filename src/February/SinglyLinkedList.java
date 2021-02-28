@@ -18,4 +18,21 @@ public class SinglyLinkedList {
         }
         temp=newNode;
     }
+
+    public boolean isEmpty(){
+        return head==null;
+    }
+    public void print(){
+        if(!isEmpty()){
+            Node temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" -> ");
+                temp=temp.next;
+            }
+            System.out.println();
+            return;
+        }
+        System.out.println("List is empty");
+    }
+
 }
