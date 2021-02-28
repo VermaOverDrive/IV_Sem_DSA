@@ -36,6 +36,12 @@ public class SinglyLinkedList {
 
 
     }
+    public void insertAtMiddle(Node newNode ) {
+
+
+
+    }
+
     public void print() {
         if (!isEmpty()) {
             Node temp = head;
