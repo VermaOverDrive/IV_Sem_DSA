@@ -2,20 +2,20 @@ package February;
 
 public class Main {
     public static void main(String[] args) {
-        SinglyLinkedList LL=new SinglyLinkedList();
-        LL.insertAtEnd(new Node( 5));
-        LL.insertAtBegin(new Node( 88));
-        LL.insertAtEnd(new Node( 6));
-        LL.insertAtEnd(new Node(9));
-        LL.insertAtEnd(new Node(10));
-        LL.insertAtEnd(new Node(11));
-        LL.print();
-        LL.insertAtBegin(new Node(8 ));
-        LL.print();
-        LL.insertAtMiddle(new Node(3));
-
-
-        LL.print();
+        SinglyLinkedList ll=new SinglyLinkedList();
+        ll.insertAtEnd(new Node( 5));
+        ll.print();
+        ll.insertAtBegin(new Node( 88));
+        ll.insertAtEnd(new Node( 6));
+        /*ll.insertAtEnd(new Node(9));
+        ll.insertAtEnd(new Node(10));
+        ll.insertAtEnd(new Node(11));
+        ll.print();
+        ll.insertAtBegin(new Node(8 ));
+        ll.print();
+        ll.insertAtMiddle(new Node(3));*/
+        ll.deleteAtEnd();
+        ll.print();
 
     }
 }
