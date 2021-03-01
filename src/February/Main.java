@@ -7,14 +7,16 @@ public class Main {
         ll.print();
         ll.insertAtBegin(new Node( 88));
         ll.insertAtEnd(new Node( 6));
-        /*ll.insertAtEnd(new Node(9));
+        ll.print();
+        ll.insertAtEnd(new Node(9));
         ll.insertAtEnd(new Node(10));
         ll.insertAtEnd(new Node(11));
         ll.print();
         ll.insertAtBegin(new Node(8 ));
         ll.print();
-        ll.insertAtMiddle(new Node(3));*/
-        ll.deleteAtEnd();
+        ll.insertAtMiddle(new Node(3));
+        ll.deleteAtBegin();
+
         ll.print();
 
     }
