@@ -72,7 +72,6 @@ public class SinglyLinkedList {
             return;
         }
         System.out.println("Linked List empty");
-
     }
 
     public void print() {
