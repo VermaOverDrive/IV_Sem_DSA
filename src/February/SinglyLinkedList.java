@@ -43,8 +43,8 @@ public class SinglyLinkedList {
 
             }
             Node slow =head;
-            Node fast=head.next;
-            while(fast != null && fast.next!= null){
+            Node fast=head;
+            while(fast.next!=null && fast.next.next!= null){
                 slow=slow.next;
                 fast=fast.next.next;
 
@@ -53,6 +53,17 @@ public class SinglyLinkedList {
               slow.next=newNode;
               newNode.next=temp;
 
+    }
+    public void deleteAtEnd(){
+        if(isEmpty() || head.next==null){
+            head=null;
+            return;
+        }
+        Node temp=head;
+        while(temp.next.next!=null){
+            temp=temp.next;
+        }
+        temp.next=null;
     }
 
     public void print() {
