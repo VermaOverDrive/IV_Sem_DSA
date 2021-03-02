@@ -12,16 +12,26 @@ public class DoublyLinkedList {
 
     public void insertAtEnd(Node newNode) {
         if (head == null) {
-                head=tail=newNode;
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = tail.next;
         }
-        else
-            tail.next=newNode;
-            newNode.prev=tail;
-            tail=tail.next;
+    }
 
+    public void print() {
+        if (head == null) {
+            System.out.println(" LinkedList is empty");
+        } else {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(+temp.data + " <-> ");
+                temp = temp.next;
+            }
+            System.out.println();
 
-
-
-
+        }
     }
 }
+
