@@ -68,9 +68,20 @@ public class SinglyLinkedList {
                    }
                    temp.next=null;
                }
-
-
             }
+
+            public void  deleteAtBegin() {
+                if (!isEmpty()) {
+                    head = head.next;
+                    return;
+                }
+                System.out.println("List is empty");
+            }
+
+
+
+
+
 
     public void print() {
         if (!isEmpty()) {
