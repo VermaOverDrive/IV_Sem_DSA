@@ -54,25 +54,23 @@ public class SinglyLinkedList {
               newNode.next=temp;
 
     }
-    public void deleteAtEnd(){
-        if(isEmpty() || head.next==null){
-            head=null;
-            return;
-        }
-        Node temp=head;
-        while(temp.next.next!=null){
-            temp=temp.next;
-        }
-        temp.next=null;
-    }
+            public void deleteAtEnd(){
+               if(isEmpty()){
+                   System.out.println("Empty");
+               }
+               else if(head.next==null){
+                   head=null;
+               }
+               else{
+                   Node temp = head;
+                   while(temp.next.next!=null){
+                       temp=temp.next;
+                   }
+                   temp.next=null;
+               }
 
-    public void deleteAtBegin(){
-        if(!isEmpty() ){
-            head =head.next;
-            return;
-        }
-        System.out.println("Linked List empty");
-    }
+
+            }
 
     public void print() {
         if (!isEmpty()) {
