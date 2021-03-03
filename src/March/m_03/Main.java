@@ -19,6 +19,5 @@ public class Main {
         dd.deleteAtEnd();
         dd.print();
     }
-
 }
 
