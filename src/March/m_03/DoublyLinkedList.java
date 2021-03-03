@@ -20,6 +20,18 @@ public class DoublyLinkedList {
         }
     }
 
+    public void insertAtBegin(Node newNode){
+        if (head==null){
+            head = tail =newNode;
+
+        }else {
+            head=newNode;
+
+
+        }
+    }
+
+
     public void print() {
         if (head == null) {
             System.out.println(" LinkedList is empty");
