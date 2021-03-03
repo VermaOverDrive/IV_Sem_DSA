@@ -8,6 +8,8 @@ public class Main {
         dd.print();
         dd.insertAtEnd(new Node(99));
         dd.print();
+        dd.insertAtBegin(new Node(88));
+        dd.print();
     }
 }
 
