@@ -31,6 +31,7 @@ public class DoublyLinkedList {
         }
     }
 
+
     public void deletAtEnd(){
         if(head==null){
             return;
@@ -42,7 +43,6 @@ public class DoublyLinkedList {
            tail=tail.prev;
            tail.next=null;
         }
-
     }
 
 
