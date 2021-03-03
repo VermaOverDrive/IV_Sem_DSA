@@ -32,7 +32,7 @@ public class DoublyLinkedList {
     }
 
 
-    public void deletAtEnd(){
+    public void deleteAtEnd(){
         if(head==null){
             return;
         }
