@@ -10,14 +10,15 @@ public class Main {
         dd.print();
         dd.insertAtBegin(new Node(88));
         dd.print();
-        dd.deletAtEnd();
+        dd.deleteAtEnd();
         dd.print();
-        dd.deletAtEnd();
+        dd.deleteAtEnd();
         dd.print();
-        dd.deletAtEnd();
+        dd.deleteAtEnd();
         dd.print();
-        dd.deletAtEnd();
+        dd.deleteAtEnd();
         dd.print();
     }
+
 }
 
