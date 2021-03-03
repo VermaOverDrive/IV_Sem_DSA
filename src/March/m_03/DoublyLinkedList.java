@@ -44,6 +44,18 @@ public class DoublyLinkedList {
            tail.next=null;
         }
     }
+    public void deleteAtBegin(){
+        if(head==null){
+            return;
+        }
+        if(head==tail){
+            head=tail=null;
+        }
+        else{
+            head=head.next;
+            head.prev=null;
+        }
+    }
 
 
     public void print() {
