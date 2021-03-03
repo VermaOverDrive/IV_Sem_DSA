@@ -20,14 +20,14 @@ public class DoublyLinkedList {
         }
     }
 
-    public void insertAtBegin(Node newNode){
-        if (head==null){
-            head = tail =newNode;
+    public void insertAtBegin(Node newNode) {
+        if (head == null) {
+            head = tail = newNode;
 
-        }else {
+        } else {
+            head.prev =newNode;
+            newNode.next=head;
             head=newNode;
-
-
         }
     }
 
