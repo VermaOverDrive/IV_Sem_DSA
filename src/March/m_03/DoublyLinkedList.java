@@ -71,5 +71,21 @@ public class DoublyLinkedList {
 
         }
     }
+
+    public boolean search(Node newNode){
+        if (head==null){
+            return false;
+        }
+        else{
+            Node temp=head;
+            while (temp!=null){
+                if(temp.data==newNode.data){
+                    return true;
+                }
+                temp=temp.next;
+            }
+        }
+        return false;
+    }
 }
 
