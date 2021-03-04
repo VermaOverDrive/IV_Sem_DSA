@@ -5,7 +5,6 @@ public class Main {
         DoublyLinkedList dd=new DoublyLinkedList() ;
         dd.print();
         System.out.println(dd.search(new Node(2)));
-
     }
 }
 
