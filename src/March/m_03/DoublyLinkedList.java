@@ -25,35 +25,34 @@ public class DoublyLinkedList {
             head = tail = newNode;
 
         } else {
-            head.prev =newNode;
-            newNode.next=head;
-            head=newNode;
+            head.prev = newNode;
+            newNode.next = head;
+            head = newNode;
         }
     }
 
 
-    public void deleteAtEnd(){
-        if(head==null){
+    public void deleteAtEnd() {
+        if (head == null) {
             return;
         }
-        if(head==tail){
-            head=tail=null;
-        }
-        else{
-           tail=tail.prev;
-           tail.next=null;
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
         }
     }
-    public void deleteAtBegin(){
-        if(head==null){
+
+    public void deleteAtBegin() {
+        if (head == null) {
             return;
         }
-        if(head==tail){
-            head=tail=null;
-        }
-        else{
-            head=head.next;
-            head.prev=null;
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
         }
     }
 
@@ -72,17 +71,16 @@ public class DoublyLinkedList {
         }
     }
 
-    public boolean search(Node newNode){
-        if (head==null){
+    public boolean search(Node newNode) {
+        if (head == null) {
             return false;
-        }
-        else{
-            Node temp=head;
-            while (temp!=null){
-                if(temp.data==newNode.data){
+        } else {
+            Node temp = head;
+            while (temp != null) {
+                if (temp.data == newNode.data) {
                     return true;
                 }
-                temp=temp.next;
+                temp = temp.next;
             }
         }
         return false;
