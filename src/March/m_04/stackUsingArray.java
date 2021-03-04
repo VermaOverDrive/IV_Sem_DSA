@@ -19,8 +19,16 @@ public class stackUsingArray {
             arr[top]=data;
 
         }
-
     }
+    public void pop(){
+        if (top==-1){
+            System.out.println("Stack is empty");
 
+        }
+        else{
+            System.out.println(arr[top]);
+            top-- ;
+        }
+    }
 
 }
