@@ -21,15 +21,30 @@ public class StackUsingLinkedList {
         if (top == null) {
             return;
         }
-        top=top.next;
+        System.out.println(top.data);
+        top = top.next;
+
     }
 
-    public void peek(){
-        if(top==null){
+    public void peek() {
+        if (top == null) {
             return;
         }
         System.out.println(top.data);
     }
 
+    public void print() {
+        if (top == null){
+            System.out.println("Stack is empty");
+        }
+        else{
+            Node temp= top;
+            while(temp!=null){
+                System.out.print(temp.data+" -> ");
+                temp=temp.next;
+            }
+            System.out.println();
+        }
+    }
 }
 
